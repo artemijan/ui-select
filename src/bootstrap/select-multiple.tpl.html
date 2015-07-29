@@ -12,6 +12,7 @@
            ng-hide="$select.disabled"
            ng-click="$select.activate()"
            ng-model="$select.search"
+           ng-model-options="{updateOnDefault:true}"
            role="combobox"
            aria-label="{{ $select.baseTitle }}"
            ondrop="return false;">

@@ -8,6 +8,7 @@
          class="form-control ui-select-search"
          placeholder="{{$select.placeholder}}"
          ng-model="$select.search"
+         ng-model-options="{updateOnDefault:true}"
          ng-show="$select.searchEnabled && $select.open">
   <div class="ui-select-choices"></div>
 </div>

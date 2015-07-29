@@ -8,6 +8,7 @@
            ng-click="$select.toggle($event)"
            placeholder="{{$select.placeholder}}"
            ng-model="$select.search"
+           ng-model-options="{updateOnDefault:true}"
            ng-hide="!$select.searchEnabled || ($select.selected && !$select.open)"
            ng-disabled="$select.disabled"
            aria-label="{{ $select.baseTitle }}">
